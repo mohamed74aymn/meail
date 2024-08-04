@@ -1,0 +1,211 @@
+@media screen and (max-width: 300px) {
+  :root {
+    font-size: 12px;
+  }
+}
+/*^========> Container <========*/
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 15px;
+  }
+}
+
+/* all of this are standared from bootstrap */
+
+/* !! nav bar */
+
+@media screen and (max-width: 1200px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    /* display: none; */
+    transform: translateX(100%);
+    position: absolute;
+    background-color: #fff;
+    flex-direction: column;
+    width: 21.875rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-inline: 0.625rem;
+    gap: 0;
+  }
+  nav ul li {
+    padding-block: 1.25rem;
+  }
+  nav ul li .close-icon {
+    display: block;
+  }
+  nav .mode {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+/* !! Header */
+
+@media screen and (min-width: 1200px) {
+  header {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  header .container > * {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container .header-content {
+    margin-top: 30px;
+  }
+  .btn-h-1 {
+    --border-radius: 100vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .btns-g {
+    flex-direction: column;
+  }
+}
+
+/* ! ______________{Chef Section}__________ */
+@media screen and (max-width: 992px) {
+  .chefts-cards .card {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+}
+@media screen and (max-width: 768px) {
+  .chefts-cards .card {
+    width: 100%;
+  }
+}
+/* !_____________{Gallary}_____________ */
+@media screen and (max-width: 1400px) {
+  .gallery-photos {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-photos {
+    height: 845px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-photos {
+    height: 1405px;
+  }
+
+  .gallery-photos picture {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+
+  .gallery .pizza {
+    order: 1;
+  }
+  .gallery .fried {
+    order: 6;
+  }
+  .gallery .omelette {
+    order: 4;
+  }
+  .gallery .kofta {
+    order: 7;
+  }
+  .gallery .burger {
+    order: 2;
+  }
+  .gallery .pizza-slices {
+    order: 3;
+  }
+  .gallery .steak {
+    order: 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-photos {
+    height: auto;
+  }
+  .gallery-photos picture {
+    width: 100%;
+  }
+}
+
+/*!_________________{Contacts}_______________*/
+@media screen and (max-width: 992px) {
+  .contact .input-group input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .details > div {
+    width: 100%;
+  }
+}
+/*!_________________{Footer}_______________*/
+
+@media screen and (max-width: 1200px) {
+  footer .container :is(.about, .contact-details) {
+    width: calc(calc(100% - var(--gap)) / 2);
+    order: 1;
+  }
+
+  footer .container :is(.subscription) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container :is(.about, .contact-details, .subscription) {
+    width: 100%;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .sunscription-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
